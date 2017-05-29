@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ServerElementComponent implements OnInit {
   
   //Decorator que permite que a propriedade seja vista por outros
-  //componentes
-  @Input() element: {type: string, name: string, content: string};
+  //componentes. O paramentro é um alias para o nome da propriedade
+  @Input('srvElement') element: {type: string, name: string, content: string};
 
   constructor() { }
 
